@@ -18,9 +18,9 @@ def counting_words(stt):
     hfile = open(htmlfile,'r')
     lines = hfile.readlines()
     for line in lines:
-        if line[0:5] == '<b>Từ':
+        if line[0:11] == ' <br> <b>Từ':
             stt = stt + 1
-            #print(str(stt))
+            print(str(stt))
     hfile.close
     return stt
 
