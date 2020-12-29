@@ -8,16 +8,18 @@ def main():
     #print(len(text))
     if text[len(text)-1] == '.':
         text = text[0:len(text)-1]
-    #print(text)
+    print(text)
     sentences = text.split('.')
     print(sentences)
     for sentence in sentences:
         if sentence[0] == ' ':
             sentence = sentence[1:len(sentence)-1]
+    for sentence in sentences:
         if sentence[len(sentence)-1] == ' ':
             sentence = sentence[0:len(sentence)-1]
+    for sentence in sentences:
         words = sentence.split()
-        #print(words)
+        print(words)
         for word in words:
             #print(len(word))
             word = trs.convert_to_lower_case(word)
@@ -34,4 +36,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
