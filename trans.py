@@ -67,7 +67,8 @@ def creating_html_file(word,stt,inf_image_file):
         number_of_line += 1
     if key_line == 0:
         fout = open('word.html','a')
-        fout.write('\n' + '<b>Từ số ' + str(stt) +' ' + word + ' '+ 'không tìm ra' + ' </b>' + '\n')
+        #fout.write('\n' + '<b>Từ số ' + str(stt) +' ' + word + ' '+ 'không tìm ra' + ' </b>' + '\n')
+        fout.write('\n' + ' <br> '  + '<b>Từ số ' + str(stt) +' ' + word + ' không tìm ra' +' </b>' + '\n' + ' <br> ' )
         fout.write(f"\n <img src={inf_image_file}> \n ")
         fout.close
     #print(key_line)
