@@ -15,7 +15,7 @@ def clicked_upgit():
     messagebox.showinfo('Thông báo!','Đã tạo ra file index.html, bạn cần tài khoản github để tạo trang web github cho riêng mình và đưa file index.html cùng thư mục download lên đó. Trang web ví dụ: nguyenthe123.github.io')
 def clicked_remove_data():
     """ """
-    cmd_rm = "rm word.html"
+    cmd_rm = "rm word.html & rm -r download"
     os.system(cmd_rm)
     messagebox.showinfo('Thông báo!','Đã xóa dữ liệu cũ')
 def clicked_infor():
